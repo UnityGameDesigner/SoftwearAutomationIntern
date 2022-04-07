@@ -1,0 +1,89 @@
+Morphological Transformations- https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_imgproc/py_morphological_ops/py_morphological_ops.html 
+
+Erosion- essentially erodes the boundry of the shape. Usefull for reducing small white noise in the image. It will erode away the small particles in the image leaving only major contours
+
+Dilation- Often used after erosion. Since erosion makes our eroded object bigger again.
+
+Thresholding- https://docs.opencv.org/3.4.0/d7/d4d/tutorial_py_thresholding.html
+
+Thresholding- essentially if the pixel value is greater then a certain value it is assigned to a certain value and if it is less than that value it is assigned another value. So for binary thresholding if the pixel is say >50 it it is assigned to white or 1 if it is less than 50/ <50 it is assigned to black
+
+Different Filters- https://docs.opencv.org/3.1.0/d4/d13/tutorial_py_filtering.html
+
+bilateral filter- highly effective noise removal filter while preserving edges
+
+Canny- popular edge detection algorithm
+
+
+FindContours refrence - https://docs.opencv.org/3.3.1/d4/d73/tutorial_py_contours_begin.html 
+
+findContours-
+Before applying findcontours you usually want to apply a threshold or canny edge detection
+
+cv2.CHAIN_APPROX_SIMPLE-
+When detecting contours your are essentially looking for points with the same intensity
+
+WHAT cv2.CHAIN_APPROX_SIMPLE does is that it find only the necessary points to determine the contour and thus saves memory
+
+
+What is a contour- 
+A curve joining continuous points which all have the same color/intensity
+
+approxPolyDP- approximates a polygonal curve with a specified precision
+
+A polygonal curve is just a connected series of line segements
+
+arcLength()
+Texture segmentation using Gabor Filters
+
+Parameters for gabor filters- http://matlabserver.cs.rug.nl/edgedetectionweb/web/edgedetection_params.html 
+
+KeyWords
+HVS - Human Visual system
+Multi-channel filtering
+Spatial Frequency- The spatial frequency is a measure of how often sinusoidal components (as determined by the Fourier transform) of the structure repeat per unit of distance. The SI unit of spatial frequency is cycles per meter.
+Wavelet- one wave 
+Spatial domain- manipulating pixels in an image directly
+Frequency Domain- Transforming the image to its frequency representation
+Kernal- A Kernel tells you how to change the value of any given pixel by combining it with different amounts of the neighboring pixels. The kernel is applied to every pixel in the image one-by-one to produce the final image (this operation known as a convolution).
+
+Page 1
+Texture is periodically repeating patterns
+People use texture properties to differentiate between textures
+Three texture properties
+Repetition
+Direction
+Complexity
+Texture repetition can be categorized by 
+Spatial frequency
+
+Directionality by its orientation
+Page 2
+Gabor filter used extensively in texture segmentation due to the ability to
+Tune to specific spatial frequency
+Tune to specific orientation
+Gabor Function is a sinusoidally modulated Gaussian
+
+Page 3
+Texture Segmentation uses multi-channel filtering 
+Filter Bank design
+Decomposition of the input image using the filter bank
+Feature Extraction
+Clustering of pixels in the feature space
+STEP 1: FILTER BANK DESIGN
+
+
+
+
+
+Machine Learning
+
+Pattern Recognition
+Load images from custom data set
+
+Different Types of Classifiers
+https://www.kaggle.com/jeffd23/10-classifier-showdown-in-scikit-learn
+
+
+Linear SVM
+https://www.youtube.com/watch?v=81ZGOib7DTk 
